@@ -21,13 +21,17 @@ Jobs = [{
     'id': 4,
     'title': 'Backend Developer',
     'location': 'california, U.S.A',
+}, {
+    'id': 5,
+    'title': 'AI-ML Engineer',
+    'location': 'california, U.S.A',
 }]
 
 
 @app.route("/")
 def hello_world():
-  return render_template('home.html', jobs=Jobs)
+    return render_template('home.html', jobs=Jobs)
 
 
 if __name__ == '__main__':
-  app.run(host='0.0.0.0', debug=True)
+    app.run(host='0.0.0.0', debug=True)
